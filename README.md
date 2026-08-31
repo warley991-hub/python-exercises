@@ -1,1 +1,1 @@
-A collection of my daily Python exercises and problem sets from various courses, including CS50P. This repository tracks my continuous learning and practice.
+A collection of my daily Python exercises and problem sets from various courses. This repository tracks my continuous learning and practice.
