@@ -3,6 +3,7 @@ while True:
         numero = int(input('Digite um número inteiro: '))
         if numero <0:
             print('Digite somente números não negativos!')
+            continue
         break
     except ValueError:
         print('Digite somente números inteiros!')
