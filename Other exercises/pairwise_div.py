@@ -6,6 +6,9 @@ def pairwise_div(Lnum, Ldenom):
 
   Raise a ValueError if Ldenom contains 0.
   """
+
+  assert len(Lnum) == len(Ldenom), 'As listas precisam ter o mesmo tamanho.'
+  assert len(Lnum) and len(Ldenom) != 0, 'As listas não podem estar vazias!'
   results = []
 
   for i in range(len(Lnum)):
@@ -13,7 +16,7 @@ def pairwise_div(Lnum, Ldenom):
       r = Lnum[i]/Ldenom[i]
       results.append(r)
     except ZeroDivisionError:
-      raise ValueError
+      raise ValueError(f'Ldenom não pode conter zero.')
   return results
 
 L1 = [4, 5, 6]
